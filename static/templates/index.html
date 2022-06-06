@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Liviu's movie list</title>
+</head>
+<body>
+
+    <h1>Movie list</h1>
+    <ul id="fileData">
+    {% for item in fileData %}
+        <li>
+            <a href="{{ item['url'] }}">{{ item["title"] }}</a>
+            <br>
+            <img src="{{ url_for('static', filename=item['images']) }}" alt="{{ item['title'] }}">
+
+
+        </li>
+        <hr>
+    {% endfor %}
+    </ul>
+
+
+</body>
+</html>
