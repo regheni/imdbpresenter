@@ -1,0 +1,8 @@
+setup.py
+src/imdbpresenter/__init__.py
+src/imdbpresenter/app.py
+src/imdbpresenter.egg-info/PKG-INFO
+src/imdbpresenter.egg-info/SOURCES.txt
+src/imdbpresenter.egg-info/dependency_links.txt
+src/imdbpresenter.egg-info/top_level.txt
+src/imdbpresenter/configuration/__init__.py

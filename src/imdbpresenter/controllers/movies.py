@@ -6,14 +6,14 @@ from imdbpresenter.models.movie import Movie
 
 movies_blueprint = Blueprint("movies", __name__)
 
-
 @movies_blueprint.route("/movies")
 def index():
-    all movies = Movie.all()
+    all_movies = Movie.all()
     import ipdb
 
-    ipdb set_trace()
+    ipdb.set_trace()
 
+    file_data = []
 
     for line in file_data:
         count += 1
@@ -21,7 +21,7 @@ def index():
         images_urls = line["image_urls"]
         if len(_images) > 0:
             first_item_images = _images [0]
-            image_url = "media/image_file/" + first_item_images["path"]
+            image_url = "media/full/" + first_item_images["path"]
             line["images"] = image_url
             first_item_image_url = images_urls [0]
             line["image_urls"] = first_item_image_url
