@@ -6,11 +6,11 @@
 <body>
     <h1>Movie list</h1>
     <ul id="file_data">
-    {% for item in file_data %}
+    {% for key, value in line.items() %}
         <li>
-            <a href="{{ item['url'] }}">{{ item["title"] }}</a>
-            <br>
-            <img src="{{ url_for('static', filename=item['images']) }}" alt="{{ item['title'] }}">
+            <a href="{{ key }}">{{ value }}</a>
+            <br>-->
+           <img src="{{ url_for('static', filename=item['images']) }}" alt="{{ item['title'] }}">-->
 
 
         </li>
